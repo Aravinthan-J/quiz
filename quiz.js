@@ -32,6 +32,7 @@ var quiz={question:[
 
 function nextname(){
 var name=document.getElementById("name").value;
+
 if(name!==""){
     document.getElementById("welcome").innerHTML="Welcome"+" "+name+" "+"🙏 ";}
     else{
@@ -82,11 +83,9 @@ function check(val){
     else{
         document.getElementById("score").style.color="red";
     }
+    console.log(value+":::"+ans,"count::"+count);
 }
-function submitbtn(){
-    document.getElementById("scorect").value=count;
-    document.getElementById("urname").value=document.getElementById("name").value;
-    document.getElementById("tabel").style.display="block";
+function submit(){
 document.getElementById("result").style.display="block";
 document.getElementById("container").style.display="none";
 if(count>=5){
